@@ -1,6 +1,14 @@
-    
-              <p>The following project was carried out for a major Canadian bank, aiming to understand the factors that help predict its customer churn.</p>
-              <a class="btn1 btn-secondary btn1 text-uppercase" href="https://github.com/tuliovp/bank_turnover/tree/master">Github</a>
+The following project was carried out for a major Canadian bank, aiming to understand the factors that help predict its customer churn.</p>
+                  <p>
+                  Feel free to check how everything in the Jupyter Notebooks is working for yourself in the Portfolio link below. And please let me know if you have any comments.
+                  </p>
+                    <br>
+                    <div class="row">
+                      <div class="column">
+                        <a class="btn btn-secondary btn text-uppercase" href="https://tuliovp.github.io/#shap">Portfolio</a>
+                      </div>
+                    </div>
+                </div>
                 <div class="case_content">
                   <h1>Description</h1>
                   <hr>
@@ -27,14 +35,11 @@
                       <li><code>Purchase Weight</code> =  (𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛 𝐴𝑚𝑜𝑢𝑛𝑡)/(𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛 𝐶𝑜𝑢𝑛𝑡)</li>
                     </ul>
                     <br>
-
-                    <br><br>
                     <br>
                     <b>Exploratory Analysis:</b><br><br>
                     <br>
                     An analysis of key influencers in Power BI shows that <code>attrition_flag</code> is more likely to increase (1 – meaning the client leaves the bank), when they are reached out by more than 5 marketing campaigns. The average of <code>attrition_flag</code> grows by 0.84.
                     On the other hand, when clients have an average revolving balance, that is, the balance that carries over from one month to the next, between 581-2382, the average of the <code>attrition_flag</code> is more likely to decrease (it falls around 0.3)
-
                     <br><br>
                     <br>
                     <b>Predicting Churn:</b><br><br>
@@ -44,10 +49,8 @@
                     In the end, we ended up with 8 main features that most explain a churn rate prediction, from 0 to 1.
                     <br><br>
                     As we saw in the exploratory analysis, classes are unbalanced (84/16). So I use StratifiedShuffleSplit to split the train and test model, using 80% to train and 20% to test the predictions. Also we need to turn categorical variables into dummy variables - binary "switches" that turn the parameters in the equation on or off.
-
                     <br><br>
                     When there are several categorical independent variables, such as age, gender, salary range, Random Forest usually performs better than a Logistic Regression. But mainly, in addition to having given good predictions and an acceptable MAE and RMSE, it's not a black-box. That means we can measure the importance of each feature, as well as estimate the strength of the ensemble, correlation and generalization error (PE) in each division of the tree, allowing the model to be adjusted and validated during training.
-
                     <br><br>
                     <b>Analysis using SHAP values:</b><br><br>
                     SHAP values (SHapley Additive exPlanations) is a method based on cooperative game theory and used to increase transparency and interpretability of machine learning models. SHAP values interpret the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value. 
@@ -56,19 +59,7 @@
                     Of course, each team has many features. <br>So if we answer this question for number of goals, we could repeat the process for all other features.
                     <br><br>SHAP values do this in a way that guarantees a nice property. Specifically, you decompose a prediction with the following equation:
                     <code>sum(SHAP values for all features) = pred_for_team - pred_for_baseline_values</code>
-
                     <br><br>
                   </p>
                   <br>
-                  <h1>Read more</h1>
-                  <hr>
-                  <p>
-                  Feel free to check how everything in the Jupyter Notebooks is working for yourself in the Portfolio link below. And please let me know if you have any comments.
-                  </p>
-                    <br>
-                    <div class="row">
-                      <div class="column">
-                        <a class="btn btn-secondary btn text-uppercase" href="[https://github.com/tuliovp/bank_turnover/tree/master](https://tuliovp.github.io/#shap)">Portfolio</a>
-                      </div>
-                    </div>
-                </div>
+
