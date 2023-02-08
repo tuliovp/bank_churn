@@ -1,4 +1,4 @@
-              <h1 style="font-size: 32px;">Case - Random Forest & SHAP Values (2022)</h1>
+    
               <p>The following project was carried out for a major Canadian bank, aiming to understand the factors that help predict its customer churn.</p>
               <a class="btn1 btn-secondary btn1 text-uppercase" href="https://github.com/tuliovp/bank_turnover/tree/master">Github</a>
                 <div class="case_content">
